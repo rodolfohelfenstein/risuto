@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:App"
+      name = "App">
+      <FileRef
+         location = "group:Risuto.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:Packages"
       name = "Packages">
    </Group>
