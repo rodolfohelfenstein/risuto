@@ -8,8 +8,4 @@
          location = "group:Risuto.xcodeproj">
       </FileRef>
    </Group>
-   <Group
-      location = "group:Packages"
-      name = "Packages">
-   </Group>
 </Workspace>
