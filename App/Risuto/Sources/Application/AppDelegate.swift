@@ -13,6 +13,7 @@ typealias LaunchOptions = [UIApplication.LaunchOptionsKey: Any]
 class AppDelegate: UIResponder {
 
     var window: UIWindow?
+    var appRouter: AppRouter?
 
 }
 
@@ -22,9 +23,16 @@ extension AppDelegate: UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: LaunchOptions?) -> Bool
     {
+
+        let navigationController = UINavigationController()
+        navigationController.navigationBar.prefersLargeTitles = true
+
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = UIViewController()
+        self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
+
+        self.appRouter = AppRouter(navigationController: navigationController)
+        self.appRouter?.start()
 
         return true
     }
