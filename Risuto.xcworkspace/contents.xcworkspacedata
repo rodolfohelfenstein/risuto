@@ -2,6 +2,19 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:Modules"
+      name = "Modules">
+      <FileRef
+         location = "group:Network">
+      </FileRef>
+      <FileRef
+         location = "group:Models">
+      </FileRef>
+      <FileRef
+         location = "group:ListModule">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:App"
       name = "App">
       <FileRef

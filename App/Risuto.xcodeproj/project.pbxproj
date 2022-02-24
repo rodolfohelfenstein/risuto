@@ -7,24 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		444CAF2827C74B27006BB1D2 /* ListModule in Frameworks */ = {isa = PBXBuildFile; productRef = 444CAF2727C74B27006BB1D2 /* ListModule */; };
 		4487DCF527C336A300961F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4487DCF427C336A300961F08 /* AppDelegate.swift */; };
 		4487DCFE27C336A400961F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4487DCFD27C336A400961F08 /* Assets.xcassets */; };
 		4487DD0127C336A400961F08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4487DCFF27C336A400961F08 /* LaunchScreen.storyboard */; };
-		44910CC927C498960075EB7B /* FilmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CC827C498960075EB7B /* FilmListViewController.swift */; };
-		44910CCB27C498A50075EB7B /* FilmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CCA27C498A50075EB7B /* FilmListView.swift */; };
-		44910CCE27C49F430075EB7B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CCD27C49F430075EB7B /* API.swift */; };
 		44910CD227C4A3740075EB7B /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CD127C4A3740075EB7B /* UICollectionView+Extensions.swift */; };
-		44910CD927C4A7E00075EB7B /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CD827C4A7E00075EB7B /* CategoryListViewController.swift */; };
-		44910CDE27C4AE1C0075EB7B /* CategoryItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CDD27C4AE1C0075EB7B /* CategoryItemViewCell.swift */; };
-		44910CE127C564980075EB7B /* CategoryListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CE027C564980075EB7B /* CategoryListModels.swift */; };
 		44910CE927C566470075EB7B /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CE827C566470075EB7B /* UIImageView+Extensions.swift */; };
 		44910CEB27C56DBA0075EB7B /* GenericCollectionViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CEA27C56DBA0075EB7B /* GenericCollectionViewConfiguration.swift */; };
 		44910CED27C575A40075EB7B /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CEC27C575A40075EB7B /* AppRouter.swift */; };
-		44910CF027C5782B0075EB7B /* CategoryListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CEF27C5782B0075EB7B /* CategoryListRouter.swift */; };
-		44910CF427C578690075EB7B /* CategoryListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CF327C578690075EB7B /* CategoryListInteractor.swift */; };
-		44910CF627C578730075EB7B /* CategoryListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CF527C578730075EB7B /* CategoryListPresenter.swift */; };
-		44910CF827C579B30075EB7B /* CategoryListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CF727C579B30075EB7B /* CategoryListBuilder.swift */; };
-		44910CFB27C57D820075EB7B /* CategoryListLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44910CFA27C57D820075EB7B /* CategoryListLogic.swift */; };
+		44FBA5EF27C81E5D00164949 /* CategoryItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBA5EE27C81E5D00164949 /* CategoryItemViewCell.swift */; };
+		44FBA5F127C81E7E00164949 /* FilmItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBA5F027C81E7E00164949 /* FilmItemViewCell.swift */; };
+		44FBA5F427C82C7D00164949 /* URLSession+NetworkSessionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBA5F327C82C7D00164949 /* URLSession+NetworkSessionRequest.swift */; };
+		44FBA5F927C83A8F00164949 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBA5F827C83A8F00164949 /* Category.swift */; };
+		44FBA5FB27C83CAC00164949 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 44FBA5FA27C83CAC00164949 /* Network */; };
+		44FBA5FD27C83CC000164949 /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 44FBA5FC27C83CC000164949 /* Models */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,21 +29,14 @@
 		4487DCFD27C336A400961F08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4487DD0027C336A400961F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4487DD0227C336A400961F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44910CC827C498960075EB7B /* FilmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListViewController.swift; sourceTree = "<group>"; };
-		44910CCA27C498A50075EB7B /* FilmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListView.swift; sourceTree = "<group>"; };
-		44910CCD27C49F430075EB7B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		44910CD127C4A3740075EB7B /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
-		44910CD827C4A7E00075EB7B /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
-		44910CDD27C4AE1C0075EB7B /* CategoryItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemViewCell.swift; sourceTree = "<group>"; };
-		44910CE027C564980075EB7B /* CategoryListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListModels.swift; sourceTree = "<group>"; };
 		44910CE827C566470075EB7B /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		44910CEA27C56DBA0075EB7B /* GenericCollectionViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewConfiguration.swift; sourceTree = "<group>"; };
 		44910CEC27C575A40075EB7B /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		44910CEF27C5782B0075EB7B /* CategoryListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListRouter.swift; sourceTree = "<group>"; };
-		44910CF327C578690075EB7B /* CategoryListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListInteractor.swift; sourceTree = "<group>"; };
-		44910CF527C578730075EB7B /* CategoryListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListPresenter.swift; sourceTree = "<group>"; };
-		44910CF727C579B30075EB7B /* CategoryListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListBuilder.swift; sourceTree = "<group>"; };
-		44910CFA27C57D820075EB7B /* CategoryListLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListLogic.swift; sourceTree = "<group>"; };
+		44FBA5EE27C81E5D00164949 /* CategoryItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemViewCell.swift; sourceTree = "<group>"; };
+		44FBA5F027C81E7E00164949 /* FilmItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmItemViewCell.swift; sourceTree = "<group>"; };
+		44FBA5F327C82C7D00164949 /* URLSession+NetworkSessionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+NetworkSessionRequest.swift"; sourceTree = "<group>"; };
+		44FBA5F827C83A8F00164949 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FBA5FD27C83CC000164949 /* Models in Frameworks */,
+				444CAF2827C74B27006BB1D2 /* ListModule in Frameworks */,
+				44FBA5FB27C83CAC00164949 /* Network in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,9 +56,10 @@
 		440D507B27C336E5002B377C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				44FBA5F727C83A8600164949 /* Models */,
+				44FBA5F227C82C6C00164949 /* Network */,
+				44FBA5EC27C81E3A00164949 /* UI */,
 				44910CD027C4A3650075EB7B /* Helpers */,
-				44910CCC27C49F390075EB7B /* API */,
-				44910CC527C4983B0075EB7B /* Scenes */,
 				440D508027C3371F002B377C /* Application */,
 			);
 			path = Sources;
@@ -141,44 +134,6 @@
 			path = Risuto;
 			sourceTree = "<group>";
 		};
-		44910CC527C4983B0075EB7B /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				44910CD727C4A7D00075EB7B /* CategoryList */,
-				44910CD627C4A7480075EB7B /* VehicleList */,
-				44910CD527C4A7350075EB7B /* SpecieList */,
-				44910CD427C4A7250075EB7B /* LocationList */,
-				44910CD327C4A71E0075EB7B /* PeopleList */,
-				44910CC627C4987B0075EB7B /* FilmList */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		44910CC627C4987B0075EB7B /* FilmList */ = {
-			isa = PBXGroup;
-			children = (
-				44910CC727C498830075EB7B /* Presentation */,
-			);
-			path = FilmList;
-			sourceTree = "<group>";
-		};
-		44910CC727C498830075EB7B /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				44910CC827C498960075EB7B /* FilmListViewController.swift */,
-				44910CCA27C498A50075EB7B /* FilmListView.swift */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		44910CCC27C49F390075EB7B /* API */ = {
-			isa = PBXGroup;
-			children = (
-				44910CCD27C49F430075EB7B /* API.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		44910CD027C4A3650075EB7B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,110 +144,44 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		44910CD327C4A71E0075EB7B /* PeopleList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PeopleList;
-			sourceTree = "<group>";
-		};
-		44910CD427C4A7250075EB7B /* LocationList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LocationList;
-			sourceTree = "<group>";
-		};
-		44910CD527C4A7350075EB7B /* SpecieList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SpecieList;
-			sourceTree = "<group>";
-		};
-		44910CD627C4A7480075EB7B /* VehicleList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VehicleList;
-			sourceTree = "<group>";
-		};
-		44910CD727C4A7D00075EB7B /* CategoryList */ = {
-			isa = PBXGroup;
-			children = (
-				44910CF927C57D640075EB7B /* Protocols */,
-				44910CEE27C578220075EB7B /* Router */,
-				44910CDF27C5648F0075EB7B /* Models */,
-				44910CF227C5785E0075EB7B /* Interactor */,
-				44910CF127C578590075EB7B /* Presenter */,
-				44910CE327C565220075EB7B /* View */,
-				44910CF727C579B30075EB7B /* CategoryListBuilder.swift */,
-			);
-			path = CategoryList;
-			sourceTree = "<group>";
-		};
-		44910CDC27C4AE0B0075EB7B /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				44910CDD27C4AE1C0075EB7B /* CategoryItemViewCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		44910CDF27C5648F0075EB7B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				44910CE027C564980075EB7B /* CategoryListModels.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		44910CE327C565220075EB7B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				44910CDC27C4AE0B0075EB7B /* Cell */,
-				44910CD827C4A7E00075EB7B /* CategoryListViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		44910CEE27C578220075EB7B /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				44910CEF27C5782B0075EB7B /* CategoryListRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		44910CF127C578590075EB7B /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				44910CF527C578730075EB7B /* CategoryListPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		44910CF227C5785E0075EB7B /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				44910CF327C578690075EB7B /* CategoryListInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		44910CF927C57D640075EB7B /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				44910CFA27C57D820075EB7B /* CategoryListLogic.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		44910CFD27C58F040075EB7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44FBA5EC27C81E3A00164949 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				44FBA5ED27C81E4900164949 /* ListCells */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		44FBA5ED27C81E4900164949 /* ListCells */ = {
+			isa = PBXGroup;
+			children = (
+				44FBA5EE27C81E5D00164949 /* CategoryItemViewCell.swift */,
+				44FBA5F027C81E7E00164949 /* FilmItemViewCell.swift */,
+			);
+			path = ListCells;
+			sourceTree = "<group>";
+		};
+		44FBA5F227C82C6C00164949 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				44FBA5F327C82C7D00164949 /* URLSession+NetworkSessionRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		44FBA5F727C83A8600164949 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44FBA5F827C83A8F00164949 /* Category.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +201,9 @@
 			);
 			name = Risuto;
 			packageProductDependencies = (
+				444CAF2727C74B27006BB1D2 /* ListModule */,
+				44FBA5FA27C83CAC00164949 /* Network */,
+				44FBA5FC27C83CC000164949 /* Models */,
 			);
 			productName = Risuto;
 			productReference = 4487DCF127C336A300961F08 /* Risuto.app */;
@@ -367,22 +259,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44910CF627C578730075EB7B /* CategoryListPresenter.swift in Sources */,
+				44FBA5F127C81E7E00164949 /* FilmItemViewCell.swift in Sources */,
+				44FBA5F927C83A8F00164949 /* Category.swift in Sources */,
 				4487DCF527C336A300961F08 /* AppDelegate.swift in Sources */,
-				44910CF427C578690075EB7B /* CategoryListInteractor.swift in Sources */,
 				44910CEB27C56DBA0075EB7B /* GenericCollectionViewConfiguration.swift in Sources */,
-				44910CF027C5782B0075EB7B /* CategoryListRouter.swift in Sources */,
-				44910CF827C579B30075EB7B /* CategoryListBuilder.swift in Sources */,
-				44910CC927C498960075EB7B /* FilmListViewController.swift in Sources */,
-				44910CE127C564980075EB7B /* CategoryListModels.swift in Sources */,
 				44910CD227C4A3740075EB7B /* UICollectionView+Extensions.swift in Sources */,
-				44910CCE27C49F430075EB7B /* API.swift in Sources */,
-				44910CFB27C57D820075EB7B /* CategoryListLogic.swift in Sources */,
 				44910CE927C566470075EB7B /* UIImageView+Extensions.swift in Sources */,
 				44910CED27C575A40075EB7B /* AppRouter.swift in Sources */,
-				44910CDE27C4AE1C0075EB7B /* CategoryItemViewCell.swift in Sources */,
-				44910CCB27C498A50075EB7B /* FilmListView.swift in Sources */,
-				44910CD927C4A7E00075EB7B /* CategoryListViewController.swift in Sources */,
+				44FBA5F427C82C7D00164949 /* URLSession+NetworkSessionRequest.swift in Sources */,
+				44FBA5EF27C81E5D00164949 /* CategoryItemViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +477,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		444CAF2727C74B27006BB1D2 /* ListModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ListModule;
+		};
+		44FBA5FA27C83CAC00164949 /* Network */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Network;
+		};
+		44FBA5FC27C83CC000164949 /* Models */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Models;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4487DCE927C336A300961F08 /* Project object */;
 }

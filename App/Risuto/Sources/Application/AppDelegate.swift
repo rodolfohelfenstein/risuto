@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Network
 
 typealias LaunchOptions = [UIApplication.LaunchOptionsKey: Any]
 
@@ -14,6 +15,17 @@ class AppDelegate: UIResponder {
 
     var window: UIWindow?
     var appRouter: AppRouter?
+
+    private func makeNavigation() -> UINavigationController {
+        let navigationController = UINavigationController()
+        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.navigationBar.tintColor = .black
+        return navigationController
+    }
+
+    private func makeNetwork() -> Network {
+        return NetworkManager(session: URLSession.shared)
+    }
 
 }
 
@@ -24,14 +36,14 @@ extension AppDelegate: UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: LaunchOptions?) -> Bool
     {
 
-        let navigationController = UINavigationController()
-        navigationController.navigationBar.prefersLargeTitles = true
+        let navigationController = makeNavigation()
+        let network = makeNetwork()
 
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
 
-        self.appRouter = AppRouter(navigationController: navigationController)
+        self.appRouter = AppRouter(navigationController: navigationController, network: network)
         self.appRouter?.start()
 
         return true
