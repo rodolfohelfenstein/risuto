@@ -27,6 +27,10 @@ let package = Package(
             ]),
         .testTarget(
             name: "NetworkTests",
-            dependencies: ["Network"]),
+            dependencies: ["Network"],
+            resources: [
+                .process("Mocks")
+            ]
+        ),
     ]
 )

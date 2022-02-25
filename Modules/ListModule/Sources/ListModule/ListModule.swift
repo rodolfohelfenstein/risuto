@@ -14,13 +14,13 @@ public class ListModule<DataModel, Cell: ConfigurableCell> {
         onSelection: @escaping OnSelection) -> UIViewController
     {
 
-        let presentationAdapter = ListPresentationAdapter<DataModel, Cell>(store: store)
+        let interactor = ListInteractor<DataModel, Cell>(store: store)
 
         let viewController = ListViewController<Cell>(title: title, layout: layout)
-        viewController.onViewLoad = presentationAdapter.loadResource
+        viewController.onViewLoad = interactor.loadResource
         viewController.onSelection = onSelection
 
-        presentationAdapter.presenter = ListPresenter<[DataModel], ListViewController<Cell>>(
+        interactor.presenter = ListPresenter<[DataModel], ListViewController<Cell>>(
             dataDisplayer: viewController,
             loadDisplayer: viewController,
             errorDisplayer: viewController,

@@ -8,7 +8,7 @@ public class ListViewController<Cell: ConfigurableCell>: UICollectionViewControl
 
     typealias ListCollectionBuilder = CollectionBuilder<Cell>
 
-    private var collectionBuilder: ListCollectionBuilder? {
+    private(set) var collectionBuilder: ListCollectionBuilder? {
         didSet {
             collectionView.dataSource = collectionBuilder
             collectionView.delegate = collectionBuilder

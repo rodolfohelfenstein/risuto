@@ -30,9 +30,9 @@ class CollectionBuilder<Cell: ConfigurableCell>: NSObject,
         let model = models[indexPath.row]
         let cell = collectionView.dequeueReusableCell(Cell.self, for: indexPath)
 
-        cell.configure(model)
+        cell?.configure(model)
 
-        return cell
+        return cell ?? UICollectionViewCell()
     }
 
     func collectionView(

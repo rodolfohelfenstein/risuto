@@ -1,4 +1,4 @@
-public final class ListPresentationAdapter<DataModel, Cell: ConfigurableCell> {
+public final class ListInteractor<DataModel, Cell: ConfigurableCell> {
 
     var store: () async throws -> [DataModel]
     var presenter: ListPresenter<[DataModel], ListViewController<Cell>>?

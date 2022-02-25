@@ -11,17 +11,13 @@ extension UICollectionView {
 
     func dequeueReusableCell<T: UICollectionViewCell>(
         _ type: T.Type,
-        for indexPath: IndexPath) -> T
+        for indexPath: IndexPath) -> T?
     {
         let className = String(describing: type)
 
-        guard let cell = dequeueReusableCell(withReuseIdentifier: className,
-                                             for: indexPath) as? T
-        else {
-            fatalError("\(className) is not registered")
-        }
+        return dequeueReusableCell(withReuseIdentifier: className,
+                                   for: indexPath) as? T
 
-        return cell
     }
 
 }
