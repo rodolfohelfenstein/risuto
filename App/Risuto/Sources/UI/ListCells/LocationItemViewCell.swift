@@ -1,21 +1,21 @@
 import UIKit
 import ListModule
 
-class FilmItemViewCell: UICollectionViewListCell { }
+class LocationItemViewCell: UICollectionViewListCell { }
 
-extension FilmItemViewCell: ConfigurableCell {
+extension LocationItemViewCell: ConfigurableCell {
 
     struct ViewModel: Identifiable {
         let id: String
         let name: String
-        let originalTitle: String
-        let originalTitleRomanised: String
+        let climate: String
+        let terrain: String
     }
 
     func configure(_ viewModel: ViewModel) {
         var content = defaultContentConfiguration()
         content.text = viewModel.name
-        content.secondaryText = viewModel.originalTitle + " (\(viewModel.originalTitleRomanised))"
+        content.secondaryText = "Climate: \(viewModel.climate) - Terrain: \(viewModel.terrain)"
         contentConfiguration = content
     }
 

@@ -3,12 +3,6 @@ import ListModule
 
 class CategoryItemViewCell: UICollectionViewListCell {
 
-    struct ViewModel: Identifiable {
-        var id: String
-        var name: String
-        var thumb: URL
-    }
-
     private lazy var categoryNameLabel: UILabel = makeCategoryNameLabel()
 
     private lazy var categoryContainerView: UIView = makeContainerView()
@@ -35,9 +29,15 @@ class CategoryItemViewCell: UICollectionViewListCell {
 
 extension CategoryItemViewCell: ConfigurableCell {
 
+    struct ViewModel: Identifiable {
+        var id: String
+        var name: String
+        var thumb: String
+    }
+
     func configure(_ viewModel: ViewModel) {
         categoryNameLabel.text = viewModel.name
-        categoryThumbImageView.load(url: viewModel.thumb)
+        categoryThumbImageView.image = UIImage(named: viewModel.thumb)
     }
 
 }
@@ -101,6 +101,7 @@ extension CategoryItemViewCell {
 
     private func makeCategoryThumbImageView() -> UIImageView {
         let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 20.0
         imageView.layer.masksToBounds = true
         return imageView

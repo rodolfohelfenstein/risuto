@@ -67,68 +67,68 @@ class AppRouter {
             store: network.fetchFilms,
             mapping: {
                 $0.map { FilmItemViewCell.ViewModel(id: $0.id,
-                                                    originName: $0.id,
-                                                    name: $0.id) }
+                                                    name: $0.title,
+                                                    originalTitle: $0.originalTitle,
+                                                    originalTitleRomanised: $0.originalTitleRomanised) }
             },
             onSelection: { item in })
     }
 
     func makePeoples() -> UIViewController {
 
-        typealias FilmsListComposer = ListModule<People, FilmItemViewCell>
+        typealias FilmsListComposer = ListModule<People, PeopleItemViewCell>
 
         return FilmsListComposer.compose(
             title: "Personagens",
             store: network.fetchPeoples,
-            mapping: {
-                $0.map { FilmItemViewCell.ViewModel(id: $0.id,
-                                                    originName: $0.id,
-                                                    name: $0.id) }
+            mapping: { $0.map { .init(id: $0.id,
+                                      name: $0.name,
+                                      age: $0.age,
+                                      gender: $0.gender) }
             },
             onSelection: { item in })
     }
 
     func makeLocations() -> UIViewController {
 
-        typealias FilmsListComposer = ListModule<Location, FilmItemViewCell>
+        typealias FilmsListComposer = ListModule<Location, LocationItemViewCell>
 
         return FilmsListComposer.compose(
             title: "Locais",
             store: network.fetchLocations,
-            mapping: {
-                $0.map { FilmItemViewCell.ViewModel(id: $0.id,
-                                                    originName: $0.id,
-                                                    name: $0.id) }
+            mapping: { $0.map { .init(id: $0.id,
+                                      name: $0.name,
+                                      climate: $0.climate,
+                                      terrain: $0.terrain) }
             },
             onSelection: { item in })
     }
 
     func makeSpecies() -> UIViewController {
 
-        typealias FilmsListComposer = ListModule<Specie, FilmItemViewCell>
+        typealias FilmsListComposer = ListModule<Specie, SpecieItemViewCell>
 
         return FilmsListComposer.compose(
             title: "Species",
             store: network.fetchSpecies,
-            mapping: {
-                $0.map { FilmItemViewCell.ViewModel(id: $0.id,
-                                                    originName: $0.id,
-                                                    name: $0.id) }
+            mapping: { $0.map { .init(id: $0.id,
+                                      name: $0.name,
+                                      classification: $0.classification) }
             },
             onSelection: { item in })
     }
 
     func makeVehicles() -> UIViewController {
 
-        typealias FilmsListComposer = ListModule<Vehicle, FilmItemViewCell>
+        typealias FilmsListComposer = ListModule<Vehicle, VehicleItemViewCell>
 
         return FilmsListComposer.compose(
             title: "Vehicles",
             store: network.fetchVehicles,
-            mapping: {
-                $0.map { FilmItemViewCell.ViewModel(id: $0.id,
-                                                    originName: $0.id,
-                                                    name: $0.id) }
+            mapping: { $0.map { .init(id: $0.id,
+                                      name: $0.name,
+                                      description: $0.description,
+                                      vehicleClass: $0.vehicleClass) }
             },
             onSelection: { item in })
     }

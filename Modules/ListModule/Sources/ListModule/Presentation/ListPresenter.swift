@@ -21,6 +21,7 @@ public class ListPresenter<DataModel, ListDataDisplayer: DataDisplayer> {
     }
 
     public func load() {
+        errorDisplayer?.display(error: nil)
         loadDisplayer?.display(load: true)
     }
 

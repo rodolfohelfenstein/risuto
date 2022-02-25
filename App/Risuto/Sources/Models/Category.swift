@@ -22,7 +22,18 @@ public enum Category: String, CaseIterable {
         }
     }
 
-    var thumb: URL {
-        return URL(string: "https://picsum.photos/200/200")!
+    var thumb: String {
+        switch self {
+        case .film:
+            return "image1"
+        case .people:
+            return "image2"
+        case .locations:
+            return "image4"
+        case .specie:
+            return "image3"
+        case .vehicles:
+            return "image5"
+        }
     }
 }

@@ -21,8 +21,10 @@ public final class ListPresentationAdapter<DataModel, Cell: ConfigurableCell> {
             do {
                 let resource = try await store()
                 presenter?.didLoad(with: resource)
+                isLoading = false
             } catch {
                 presenter?.didLoad(with: error)
+                isLoading = false
             }
         }
 

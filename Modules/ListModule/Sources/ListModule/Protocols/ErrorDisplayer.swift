@@ -1,3 +1,3 @@
 public protocol ErrorDisplayer: AnyObject {
-    func display(error: Error)
+    func display(error: Error?)
 }

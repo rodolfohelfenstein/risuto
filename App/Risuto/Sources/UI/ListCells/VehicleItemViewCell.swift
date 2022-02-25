@@ -1,21 +1,21 @@
 import UIKit
 import ListModule
 
-class FilmItemViewCell: UICollectionViewListCell { }
+class VehicleItemViewCell: UICollectionViewListCell { }
 
-extension FilmItemViewCell: ConfigurableCell {
+extension VehicleItemViewCell: ConfigurableCell {
 
     struct ViewModel: Identifiable {
         let id: String
         let name: String
-        let originalTitle: String
-        let originalTitleRomanised: String
+        let description: String
+        let vehicleClass: String
     }
 
     func configure(_ viewModel: ViewModel) {
         var content = defaultContentConfiguration()
         content.text = viewModel.name
-        content.secondaryText = viewModel.originalTitle + " (\(viewModel.originalTitleRomanised))"
+        content.secondaryText = "Class: \(viewModel.vehicleClass) \n\n\(viewModel.description)"
         contentConfiguration = content
     }
 
