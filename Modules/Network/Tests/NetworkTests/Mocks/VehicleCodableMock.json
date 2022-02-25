@@ -1,0 +1,12 @@
+{
+    "id": "923d70c9-8f15-4972-ad53-0128b261d628",
+    "name": "Sosuke's Boat",
+    "description": "A toy boat where Sosuke plays",
+    "vehicle_class": "Boat",
+    "length": "10",
+    "pilot": "https://ghibliapi.herokuapp.com/people/a10f64f3-e0b6-4a94-bf30-87ad8bc51607",
+    "films": [
+      "https://ghibliapi.herokuapp.com/films/758bf02e-3122-46e0-884e-67cf83df1786"
+    ],
+    "url": "https://ghibliapi.herokuapp.com/vehicles/923d70c9-8f15-4972-ad53-0128b261d628"
+  }

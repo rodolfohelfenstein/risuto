@@ -1,0 +1,13 @@
+{
+    "id": "835f8c7c-2fc6-4f54-b545-c02ab066cd69",
+    "name": "Custard",
+    "gender": "Male",
+    "age": "NA",
+    "eye_color": "Blue",
+    "hair_color": "Blonde",
+    "films": [
+      "https://ghibliapi.herokuapp.com/films/790e0028-a31c-4626-a694-86b7a8cada40"
+    ],
+    "species": "https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2",
+    "url": "https://ghibliapi.herokuapp.com/people/835f8c7c-2fc6-4f54-b545-c02ab066cd69"
+  }

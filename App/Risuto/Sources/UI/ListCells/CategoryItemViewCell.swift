@@ -20,11 +20,6 @@ class CategoryItemViewCell: UICollectionViewListCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func configure(with name: String, and url: URL) {
-        categoryNameLabel.text = name
-        categoryThumbImageView.load(url: url)
-    }
-
 }
 
 extension CategoryItemViewCell: ConfigurableCell {
